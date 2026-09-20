@@ -102,7 +102,7 @@ musicBtn.addEventListener("click", () => {
     const d=ctx.getImageData(0,0,canvas.width,canvas.height).data;let c=0,t=0;
     for(let i=3;i<d.length;i+=64){t++;if(d[i]<35)c++} const pct=Math.round(c/Math.max(1,t)*100);
     if(progress)progress.style.width=Math.min(100,pct)+"%";
-    if(pct>=55&&!revealed){revealed=true;canvas.classList.add("scratched");if(status)status.textContent="01 January 2027 — now scroll down for the countdown ✨";if(progress)progress.style.width="100%";}
+    if(pct>=55&&!revealed){revealed=true;canvas.classList.add("scratched");if(status)status.textContent="03 January 2027 — now scroll down for the countdown ✨";if(progress)progress.style.width="100%";}
   }
   canvas.addEventListener("pointerdown",e=>{drawing=true;canvas.setPointerCapture(e.pointerId);erase(e.clientX,e.clientY)});
   canvas.addEventListener("pointermove",e=>{if(drawing)erase(e.clientX,e.clientY)});
