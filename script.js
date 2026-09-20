@@ -142,6 +142,6 @@ document.getElementById("sendRsvp").addEventListener("click",()=>{
   const name = document.getElementById("guestName").value.trim() || "Guest";
   const response = document.querySelector(".rsvp-option.active").dataset.value;
   const message = document.getElementById("message").value.trim();
-  const text = `Assalamu Alaikum Nida & Azim!%0A%0AName: ${encodeURIComponent(name)}%0ARSVP: ${encodeURIComponent(response)}${message ? `%0AMessage: ${encodeURIComponent(message)}` : ""}%0A%0A01 January 2027`;
+  const text = `Assalamu Alaikum Azim!%0A%0AName: ${encodeURIComponent(name)}%0ARSVP: ${encodeURIComponent(response)}${message ? `%0AMessage: ${encodeURIComponent(message)}` : ""}%0A%0A01 January 2027`;
   window.open(`https://wa.me/919664320421?text=${text}`,"_blank");
 });
