@@ -384,8 +384,23 @@
 
 
 /* =========================================================
-   DATE REVEAL — NEW ELEGANT SERIF
-   Append-only: existing CSS above is unchanged
+   FINAL PROTECTION — KEEP ALL AZIM & NIDA NAME STYLING
+   The date font change must NOT affect any other names.
+   ========================================================= */
+
+.names,
+.footer .names,
+.thankyou .names {
+  font-family: "Great Vibes", cursive !important;
+  font-size: 52px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  color: #7c1f2b !important;
+}
+
+/* =========================================================
+   DATE REVEAL — ONLY THIS SECTION GETS THE NEW FONT
    ========================================================= */
 
 .revealed-date .revealed-day {
@@ -454,12 +469,7 @@
   }
 }
 
-
-/* =========================================================
-   THANK YOU — PROTECT ORIGINAL DESIGN
-   Append-only: existing CSS above is unchanged
-   ========================================================= */
-
+/* Keep Thank You text exactly in its original styling */
 .thankyou .big {
   font-family: "Montserrat", sans-serif !important;
   font-size: 78px !important;
@@ -468,15 +478,6 @@
   letter-spacing: normal !important;
   color: #7c1f2b !important;
   margin: 30px 0 !important;
-}
-
-.thankyou .names {
-  font-family: "Great Vibes", cursive !important;
-  font-size: 52px !important;
-  font-weight: 400 !important;
-  line-height: 1 !important;
-  letter-spacing: normal !important;
-  color: #7c1f2b !important;
 }
 
 .thankyou .quote {
